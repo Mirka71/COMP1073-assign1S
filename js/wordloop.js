@@ -6,7 +6,8 @@ const wC1 = [
     'My dog', 
     'The rabbit',
     'The chicken',
-    'The cow'];
+    'The cow'
+];
 
 // column 2
 const wC2 = [
@@ -14,7 +15,8 @@ const wC2 = [
     'jumps',
     'runs',
     'digs',
-    'poops'];
+    'poops'
+];
 
 // column 3
 const wC3 = [
@@ -22,7 +24,7 @@ const wC3 = [
     'on your',
     'between the',
     'for your',
-    'by the',
+    'by the'
 ];
 
 // column 4
@@ -34,9 +36,20 @@ const wC4 = [
     'table'
 ];
 
-// consolidate arrays so it's more organised
+// Function chooses random number
 
-const allWC = ['wC1', 'wC2', 'wC3', 'wC4'];
+function randomNum () {
+   let randomNumber = Math.floor(Math.random()*5);
+   return randomNumber;
+}
+
+// Testing function to use random number to pick word from array.
+
+function wordPicker() {
+    let newWord = wC1[randomNum()].toString();
+    document.getElementById('output').innerHTML = newWord
+}
+
 
 
 
