@@ -36,20 +36,11 @@ const wC4 = [
     'table'
 ];
 
-// Function chooses random number
+// function chooses random number
 
 function randomNum () {
-   let randomNumber = Math.floor(Math.random()*5);
-   return randomNumber;
+    let randomNum = Math.floor(Math.random()*5);
+    return randomNum;
 }
-
-// Testing function to use random number to pick word from array.
-
-function wordPicker() {
-    let newWord = wC1[randomNum()].toString();
-    document.getElementById('output').innerHTML = newWord
-}
-
-
 
 

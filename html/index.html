@@ -18,25 +18,25 @@
         <!-- First Column -->
         <section id="section1">
             <p id="word1"></p>
-            <button id="b1" type="button">1</button>
+            <button onclick="addValue(0)" id="b1" type="button">1</button>
         </section>
 
         <!-- Second column -->
         <section id="section2">
             <p id="word2"></p>
-            <button id="b2" type="button">2</button>
+            <button onclick="addValue(1)" id="b2" type="button">2</button>
         </section>
 
         <!-- Third column -->
         <section id="section3">
             <p id="word3"></p>
-            <button id="b3" type="button">3</button>
+            <button onclick="addValue(2)" id="b3" type="button">3</button>
         </section>
 
         <!-- Fourth column -->
         <section id="section4">
             <p id="word4"></p>
-            <button id="b4" type="button">4</button>
+            <button onclick="addValue(3)" id="b4" type="button">4</button>
         </section>
 
         <!-- Where output will be displayed -->
@@ -46,8 +46,7 @@
 
         <!-- Buttons for random sentence and playback -->
         <section>
-            <button onclick="wordPicker()" id="random" type="button" >Random</button>
-            <button id="playback" type="button">playback</button>
+            <button onclick="printArray()" id="playback" type="button" >Playback</button>
         </section>
 
     </article>
