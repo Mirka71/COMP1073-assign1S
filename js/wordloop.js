@@ -110,6 +110,11 @@ function addValue(order) {
     }
 }
 
+// Made a new function to print out the contents of the "complete" array .
+function printArray() {
+    document.getElementById('sentence').innerHTML = complete.toString();
+}
+
 
 
 
