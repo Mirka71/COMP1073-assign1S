@@ -91,7 +91,21 @@ function increment(value){
 
 
 
-
+// Creating a function that uses if statements to choose the corresponding array, then adding it to the global array "complete"
+function addValue(order) {
+    if(order == 0){
+        complete[order] = wC1[increment(0)].toString();
+        document.getElementById('word1').innerHTML = complete[order];
+    }else if(order == 1){
+        complete[order] = wC2[increment(1)].toString();
+        document.getElementById('word2').innerHTML = complete[order];
+    }else if(order == 3){
+        complete[order] = wC3[increment(2)].toString();
+        document.getElementById('word4').innerHTML = complete[order];
+    }else{
+        return;
+    }
+}
 
 
 
