@@ -99,13 +99,17 @@ function addValue(order) {
     }else if(order == 1){
         complete[order] = wC2[increment(1)].toString();
         document.getElementById('word2').innerHTML = complete[order];
+    }else if(order == 2){
+        complete[order] = wC2[increment(2)].toString();
+        document.getElementById('word3').innerHTML = complete[order];
     }else if(order == 3){
-        complete[order] = wC3[increment(2)].toString();
+        complete[order] = wC3[increment(3)].toString();
         document.getElementById('word4').innerHTML = complete[order];
     }else{
         return;
     }
 }
+
 
 
 
