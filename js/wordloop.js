@@ -43,4 +43,26 @@ function randomNum () {
     return randomNum;
 }
 
+// var to hold input as an array
+const complete = [];
+
+// Make a global var
+let arrayIndex = 0;
+
+
+// Created a function to ensure the correct array index variable is selected.
+function increment(value){
+    if(value == 0) {
+        if(arrayIndex > 3) {
+            arrayIndex = 0;
+        }else{
+            arrayIndex++
+        }
+        return arrayIndex
+    }
+}
+
+
+
+
 
