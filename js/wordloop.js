@@ -60,7 +60,36 @@ function increment(value){
         }
         return arrayIndex
     }
+
+    else if(value == 1) {
+        if(arrayIndex > 3){
+            arrayIndex = 0;
+        }else{
+            arrayIndex++
+        }
+        return arrayIndex
+    }
+    else if(value == 2) {
+        if(arrayIndex > 3) {
+            arrayIndex = 0;
+        }else{
+            arrayIndex++
+        }
+        return arrayIndex
+    }
+
+    else if(value == 3) {
+        if(arrayIndex > 3) {
+            arrayIndex = 0;
+        }else{
+            arrayIndex++
+        }
+        return arrayIndex
+    }
+    return;
 }
+
+
 
 
 
